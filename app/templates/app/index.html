@@ -1,0 +1,9 @@
+{% extends 'main.html' %} {% block content %}
+<div class="container">
+  <h1 class="title">Welcome to the Login Signup App</h1>
+  <p class="links_container">
+    Please <a href="{% url 'login' %}">login</a> or
+    <a href='{% url "signup" %}'>signup</a>
+  </p>
+</div>
+{% endblock %}

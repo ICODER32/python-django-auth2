@@ -1,0 +1,19 @@
+{
+  "version": 2,
+  "builds": [
+    {
+      "src": "login_signup/wsgi.py",
+      "use": "@vercel/python",
+      "config": { "maxLambdaSize": "15mb", "runtime": "python3.9" }
+    }
+  ],
+  "routes": [
+    {
+      "src": "/(.*)",
+      "dest": "/manage.py"
+    }
+  ],
+  "env": {
+    "APP_NAME": "login_signup/wgsi.py"
+  }
+}
